@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Ice Cream Survey</h1>
+        <p id="description">Research to improve our ice cream flavors.</p>
+    </header>
+    <main>
+        <div class="form">
+            <form id="survey-form" action="" method="post" autocomplete="on">
+
+                <div class="data">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="data">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+                </div>
+
+                <div class="data">
+                    <label id="number-label" for="age">Age (optional)</label>
+                    <input type="number" name="age" id="number" min="10" max="99" placeholder="Age" required>
+                </div>
+
+                <p>Which option best describes your passion for ice cream?</p>
+                <select name="opinion" id="dropdown" required>
+                    <option disabled selected value>
+                        Select your ice cream love level</option>
+                    <option value="ilove">I love ice cream.</option>
+                    <option value="idont">I don't like ice cream.</option>
+                    <option value="isnormal">I think ice cream is normal</option>
+                </select>
+
+                
+                    <p>Do you consume our ice creams?</p>
+                    <input type="radio" name="question" id="iyes" value="yes" class="input-radio"><label
+                        for="iyes">Yes</label><br>
+                    <input type="radio" name="question" id="ino" value="no" class="input-radio"><label for="ino">No</label><br>
+                    <input type="radio" name="question" id="inever" value="never" class="input-radio"><label
+                        for="inever">Never tasted</label>
+                
+
+                
+                    <p>What flavor of ice cream do you consume the most?</p>
+                    <input type="checkbox" name="stra" id="istra" value="strawberry"><label for="istra">Strawberry</label><br>
+                    <input type="checkbox" name="cre" id="icre" value="cream"><label for="icre">Cream</label><br>
+                    <input type="checkbox" name="pis" id="ipis" value="pistacho"><label for="ipis">Pistachio</label><br>
+                    <input type="checkbox" name="choco" id="ichoco" value="chocolate"><label for="ichoco">Chocolate</label>
+                
+
+                <div class="comments">
+                    <label>Any comments or suggestions?</label>
+                    <textarea name="comments" id="icomments" cols="30" rows="10" maxlength="180" placeholder="Enter your comment here..."></textarea>
+                </div>
+
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
